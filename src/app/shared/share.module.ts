@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 
 
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
+
+
 import { NonpagefoundComponent } from './nonpagefound/nonpagefound.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
@@ -9,7 +14,11 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
 
 @NgModule({
-    declarations: [
+    imports: [
+    RouterModule,
+    CommonModule
+    ],
+   declarations: [
         NonpagefoundComponent,
         HeaderComponent,
         SidebarComponent,
@@ -22,9 +31,6 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
         HeaderComponent,
         SidebarComponent,
         BreadcrumbsComponent
-        ],
-    imports: [
-
         ]
 
 })
