@@ -9,6 +9,7 @@ import { APP_ROUTES } from './app.routes';
 // modulos
 
 import { PagesModule } from './pages/pages.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // servicios
 import { ServiceModule } from './services/service.module';
@@ -29,6 +30,8 @@ import { RegisterComponent } from './login/register.component';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
+    FormsModule,
+    ReactiveFormsModule,
     ServiceModule
   ],
   providers: [],
